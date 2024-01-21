@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const products1 = [{id: 1, proName: "Milk"}, {id: 2, proName: "Eggs"}]
+        const deepCopy = _.cloneDeep(products1)
+        deepCopy[0].id = 20
+        console.log(products1)
+        console.log(deepCopy)
+    </script>
+    
+</body>
+</html>
