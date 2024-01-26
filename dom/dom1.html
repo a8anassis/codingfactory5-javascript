@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <script>
+        let color = 'red'
+        const bodyDOM = document.body
+        bodyDOM.innerHTML = `<p style="color: ${color}">Hello World!</p>`
+
+        const myP = document.createElement('p')
+        myP.innerHTML = 'Hello CF'
+        myP.setAttribute('id', 'myP')
+        bodyDOM.appendChild(myP)
+    </script>
+</body>
+</html>

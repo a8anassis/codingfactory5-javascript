@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer">
+        <p>Hello CF</p>
+    </div>
+
+    <script>
+        const outer = document.querySelector('#outer')
+        let cfText = outer.outerHTML
+        console.log(cfText)
+        outer.innerHTML += `<p>Says Hello</p>`
+    </script>
+</body>
+</html>

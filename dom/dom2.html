@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./toggle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer">
+
+        
+    </div>
+
+    <script>
+        let color = 'green'
+        let cfURL = "https://codingfactory.aueb.gr/"
+        //const outerDOM = document.getElementById('outer')
+        const outerDOM = document.querySelector('#outer')
+
+        outerDOM.innerHTML = `<p class="hiddens" id="helloWorld" style="color: ${color}">Hello CF!</p>
+                              <a id="link" href="${cfURL}" alt="Coding Factory">Visit us</a>
+                              <button id="btn" type="button" onclick="toggle()">Click me</button>`
+
+        
+        function toggle() {
+            const helloDOM = document.querySelector('#helloWorld')
+            const linkDOM = document.querySelector('#link')
+            helloDOM.classList.toggle('hidden')
+            linkDOM.classList.toggle('hidden')
+        }
+
+    </script>
+</body>
+</html>

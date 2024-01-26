@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="hello">Hello</p>
+    <button id="btn">Click Me</button>
+
+    <script>
+        function formatPosition(e, x, y) {
+            e.style.width = '100px'
+            e.style.textAlign = 'center'
+            e.style.border = '1px solid red'
+            e.style.position = 'absolute'
+            e.style.left = `${x}px`
+            e.style.top = `${y}px`
+        }
+
+        const helloDOM = document.querySelector('.hello')
+        const btnDOM = document.querySelector('#btn')
+
+        btnDOM.onclick = function() {
+            formatPosition(helloDOM, 150, 120)
+        }
+
+    
+    </script>
+
+</body>
+</html>

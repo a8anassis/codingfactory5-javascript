@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer">
+
+    </div>
+
+    <script>
+        const outer = document.querySelector('#outer')
+        const cfTextDOM = document.createElement('p')
+
+        document.body.style.backgroundColor = '#EEEDEA'
+
+        //cfTextDOM.textContent = 'Hello CF!'
+        let text = 'Hello CF!'
+        cfTextDOM.append(text)
+        //cfTextDOM.id = 'cfId'
+        cfTextDOM.setAttribute('id', 'cfId')
+
+        outer.appendChild(cfTextDOM)
+    </script>
+</body>
+</html>
