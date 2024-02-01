@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="root d-flex flex-column justify-content-center align-items-center">
+            <!-- Word counter & Actual counter -->
+            <div class="text-center">
+                <div class="mb-4">
+                    <span class="display-2">Counter</span>
+                </div>
+                <div class="mb-2 border border-black rounded-pill">
+                    <span id="counter" class="text-lg">0</span>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex mt-4">
+                <div class="me-2">
+                    <button class="btn btn-lg btn-outline-primary" type="button" id="btnDecr">Decrease</button>
+                </div>
+                <div class="me-2">
+                    <button class="btn btn-lg btn-outline-primary" type="button" id="btnReset">Reset</button>
+                </div>
+                <div>
+                    <button class="btn btn-lg btn-outline-primary" type="button" id="btnIncr">Increase</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
