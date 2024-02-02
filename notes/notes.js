@@ -37,6 +37,41 @@ function printGRDate() {
     let timeStr = `${(hours < 10) ? '0' : ''}${hours}:
                     ${(minutes < 10) ? '0' : ''}${minutes}:
                     ${(seconds < 10) ? '0' : ''}${seconds}`
-                    
+
     document.querySelector('#dateTxt').innerHTML = dateStr + "<br>" + timeStr
+}
+
+function insertNote(note) {
+    if (!note) return
+
+    noteId++
+    let clone = document.querySelector('.note.hidden').cloneNode(true)
+    clone.classList.remove('hidden')
+
+    let cloneNote = clone.querySelector('.note-info')
+    cloneNote.children[0].id = 'noteCheck' + noteId
+    cloneNote.children[1].htmlFor = 'noteCheck' + noteId
+
+    clone.querySelector('#noteCheck').addEventListener('click', function() {
+        strikeThrough(clone.querySelector('.note-text'))
+    })
+
+    clone.querySelector('#noteDelBtn').addEventListener('click', function() {
+        deleteNote(this.parentNode)
+    })
+
+    clone.querySelector('.note-text').innerHTML = note
+    document.querySelector('.notes-wrapper').appendChild(clone)
+}
+
+function strikeThrough(element) {
+    element.classList.toggle('line-through')
+}
+
+function deleteNote(note) {
+    note.remove()
+}
+
+function reset() {
+    document.querySelector('#inputNote').value = ''
 }
