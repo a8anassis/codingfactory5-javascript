@@ -48,10 +48,6 @@ function insertNote(note) {
     let clone = document.querySelector('.note.hidden').cloneNode(true)
     clone.classList.remove('hidden')
 
-    let cloneNote = clone.querySelector('.note-info')
-    cloneNote.children[0].id = 'noteCheck' + noteId
-    cloneNote.children[1].htmlFor = 'noteCheck' + noteId
-
     clone.querySelector('#noteCheck').addEventListener('click', function() {
         strikeThrough(clone.querySelector('.note-text'))
     })
@@ -59,6 +55,11 @@ function insertNote(note) {
     clone.querySelector('#noteDelBtn').addEventListener('click', function() {
         deleteNote(this.parentNode)
     })
+
+    let cloneNote = clone.querySelector('.note-info')
+    cloneNote.children[0].id = 'noteCheck' + noteId
+    cloneNote.children[1].htmlFor = 'noteCheck' + noteId
+
 
     clone.querySelector('.note-text').innerHTML = note
     document.querySelector('.notes-wrapper').appendChild(clone)
