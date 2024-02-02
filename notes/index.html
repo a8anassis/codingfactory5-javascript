@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <span id="dateTxt" class="date-text"></span>
+        </header>
+        <main>
+            <div class="notes-wrapper">
+
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <input type="text" id="inputNote" placeholder="Note">
+                <button type="button" id="addNoteBtn" class="addNote-btn">+</button>
+            </div>
+        </footer>
+    </div>
+
+    <div class="note hidden">
+        <div class="note-info">
+            <input type="checkbox" id="noteCheck1" class="note-check">
+            <label class="note-text" for="idNoteCheck2">Note2</label>
+        </div>
+        <button type="button" id="noteDelBtn" class="noteDel-btn">X</button>
+    </div>
+    <script src="./notes.js"></script>
+</body>
+</html>
