@@ -48,6 +48,7 @@ function insertNote(note) {
     let clone = document.querySelector('.note.hidden').cloneNode(true)
     clone.classList.remove('hidden')
 
+    
     clone.querySelector('#noteCheck').addEventListener('click', function() {
         strikeThrough(clone.querySelector('.note-text'))
     })
