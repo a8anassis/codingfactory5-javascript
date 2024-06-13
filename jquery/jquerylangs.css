@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#java {
+    background-image: url('../img/java.png');
+}
+
+#js {
+    background-image: url('../img/js.png');
+}
+
+#csharp {
+    background-image: url('../img/csharp.png');
+}
+
+.java-text, .js-text, .csharp-text {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: justify;
+}
+
+.m-bot {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}

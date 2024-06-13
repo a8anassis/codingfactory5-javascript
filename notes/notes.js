@@ -56,6 +56,7 @@ function insertNote(note) {
     clone.querySelector('#noteDelBtn').addEventListener('click', function() {
         deleteNote(this.parentNode)
     })
+    
 
     let cloneNote = clone.querySelector('.note-info')
     cloneNote.children[0].id = 'noteCheck' + noteId
